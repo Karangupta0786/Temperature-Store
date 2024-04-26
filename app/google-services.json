@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260955790688",
+    "project_id": "temprature-house-3f777",
+    "storage_bucket": "temprature-house-3f777.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260955790688:android:823bf893b90b2460d5d205",
+        "android_client_info": {
+          "package_name": "com.example.tempraturehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOk6fx1AQiGxSyWstqwRxu3eAIYYQkYrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
