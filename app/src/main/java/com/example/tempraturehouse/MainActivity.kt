@@ -8,11 +8,11 @@ import android.text.TextWatcher
 import android.util.Log
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.core.widget.addTextChangedListener
-import androidx.lifecycle.ViewModelProvider
+//import androidx.core.widget.addTextChangedListener
+//import androidx.lifecycle.ViewModelProvider
 import com.example.tempraturehouse.databinding.ActivityMainBinding
 import com.example.tempraturehouse.model.Temperature
-import com.example.tempraturehouse.viewModel.MainViewModel
+//import com.example.tempraturehouse.viewModel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private val binding:ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
-    private lateinit var mainViewModel: MainViewModel
+//    private lateinit var mainViewModel: MainViewModel
     lateinit var databaseReference: DatabaseReference
     lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         databaseReference = Firebase.database.reference
 
-        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
+//        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         binding.btnNext.setOnClickListener {
             startActivity(Intent(this@MainActivity,TemperaturesActivity::class.java))
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
             var temp = binding.etTemperature.text.toString()
-            var temperature = Temperature(0,temp)
+            var temperature = Temperature(temp)
 
             Log.e("temp is:===",temp)
 //            CoroutineScope(Dispatchers.IO).launch {
